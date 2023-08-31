@@ -1,0 +1,243 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <!--MATERIAL CDN-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+
+    <!--STYLESHEET-->
+    <link rel="stylesheet" href="./dashboard.css">
+    <link rel="stylesheet" href="./root.css">
+    <link rel="stylesheet" href="./sidebar.css">
+</head>
+<body>
+    <div class="container">
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <img src="./logo.png" alt="CERTH">
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-icons-sharp">close</span>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <a href="./dashboard.html" class="sidebar-link" id="dashboard-link">
+                    <span class="material-icons-sharp">grid_view</span>
+                    <h3>Dashboard</h3>
+                </a>
+
+                <a href="./Files.html" class="sidebar-link" id="files-link">
+                    <span class="material-icons-sharp">description</span>
+                    <h3>Files</h3>
+                </a>
+
+                <a href="./file_history.html" class="sidebar-link" id="file_history-link">
+                    <span class="material-icons-sharp">manage_search</span>
+                    <h3>File history</h3>
+                </a>
+
+                <a href="./users.html" class="sidebar-link" id="users-link">
+                    <span class="material-icons-sharp">group</span>
+                    <h3>Users</h3>
+                </a>
+
+                <a href="./ocr.html" class="sidebar-link" id="ocr-link">
+                    <span class="material-icons-sharp">terminal</span>
+                    <h3>OCR</h3>
+                </a>
+
+                <a href="./logout.html" class="sidebar-link">
+                    <span class="material-icons-sharp">logout</span>
+                    <h3>Log out</h3>
+                </a>
+
+            </div>
+        </aside>
+
+        <!---------- END OF ASIDE ---------->
+        <main>
+            <h1>Dashboard</h1>
+            <!--<p>Current Date and Time is <span id='ct'></span>.</p>-->
+
+            <div class="insights">
+                <div class="uploadedFiles">
+                    <span class="material-icons-sharp">description</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Files Uploaded</h3>
+                            <h1>1.258</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>45%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        <!---------- END OF INSIGHTS ---------->
+                <div class="totalUsers">
+                    <span class="material-icons-sharp">person</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Total Users</h3>
+                            <h1>512</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>68%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        <!---------- END OF TOTAL USERS ---------->
+                <div class="accuracy">
+                    <span class="material-icons-sharp">percent</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Accuracy</h3>
+                            <h1>89%</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>22%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---------- END OF ACCURACY ---------->
+            </div>
+            <!---------- END OF INSIGHTS ---------->
+
+            <div class="info">
+                <h1>Recent Uploads</h1>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Username</th>
+                            <th>Filename</th>
+                            <th>Pages</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Κωσταντίνος Μαστράς</td>
+                            <td>Φορολογική Δήλωση</td>
+                            <td>3</td>
+                            <td>19/07/2023</td>
+                        </tr>
+
+                        <tr>
+                            <td>Γιώργος Παπαδόπουλος</td>
+                            <td>Αποδείξεις</td>
+                            <td>1</td>
+                            <td>19/07/2023</td>
+                        </tr>
+
+                        <tr>
+                            <td>Πέτρος Αντωνιάδης</td>
+                            <td>Αποδεικτικά</td>
+                            <td>12</td>
+                            <td>19/07/2023</td>
+                        </tr>
+
+                        <tr>
+                            <td>Απόστολος Θέου</td>
+                            <td>Project 22</td>
+                            <td>9</td>
+                            <td>19/07/2023</td>
+                        </tr>
+
+                        <tr>
+                            <td>Ιωάννα Δήμου</td>
+                            <td>Υπογραφές</td>
+                            <td>5</td>
+                            <td>18/07/2023</td>
+                        </tr>
+
+                        <tr>
+                            <td>Αθανάσιος Πέτρου</td>
+                            <td>Project Apollo</td>
+                            <td>26</td>
+                            <td>18/07/2023</td>
+                        </tr>
+
+                        <tr>
+                            <td>Ελένη Ισμα</td>
+                            <td>Υπογραφες</td>
+                            <td>2</td>
+                            <td>18/07/2023</td>
+                        </tr>
+
+                        <tr>
+                            <td>Μαρία Καρρά</td>
+                            <td>Φορολογική</td>
+                            <td>1</td>
+                            <td>18/07/2023</td>
+                        </tr>
+
+                        <tr>
+                            <td>Κωσταντίνος Δασκλάλου</td>
+                            <td>Project Epsilon</td>
+                            <td>9</td>
+                            <td>18/07/2023</td>
+                        </tr>
+
+                        <tr>
+                            <td>Γώργος Καραντώνης</td>
+                            <td>Άδεια</td>
+                            <td>1</td>
+                            <td>17/07/2023</td>
+                        </tr>
+
+                        <tr>
+                            <td>Σοφία Μένου</td>
+                            <td>Υπογραφές</td>
+                            <td>5</td>
+                            <td>17/07/2023</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+
+        </main>
+
+        <!---------- END OF MAIN ---------->
+        <div class="right">
+            <div class="top">
+                <button id="menu-btn">
+                    <span class="material-icons-sharp">menu</span>
+                </button>
+                <div class="theme-toggler">
+                    <span class="material-icons-sharp active">light_mode</span>
+                    <span class="material-icons-sharp">dark_mode</span>
+                </div>
+                <div class="profil">
+                    <div class="inform">
+                        <p>Hey, <b>Triantafyllos</b></p>
+                        <small class="text-muted">Admin</small>
+                    </div>
+                </div>
+            </div>
+            <!---------- END OF TOP ---------->
+        </div>
+
+    </div>
+    <script src="./dashboard.js"></script>
+    <script src="./sidebar.js"></script>
+</body>
+</html>

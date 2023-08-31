@@ -1,0 +1,86 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Files</title>
+
+    <!--MATERIAL CDN-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+
+    <!--STYLESHEET-->
+    <link rel="stylesheet" href="./dashboard.css">
+    <link rel="stylesheet" href="./sidebar.css">
+    <link rel="stylesheet" href="./right.css">
+    <link rel="stylesheet" href="./root.css">
+</head>
+<body>
+    <div class="container">
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <img src="./logo.png" alt="CERTH">
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-icons-sharp">close</span>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <a href="./dashboard.html" class="sidebar-link" id="dashboard-link">
+                    <span class="material-icons-sharp">grid_view</span>
+                    <h3>Dashboard</h3>
+                </a>
+
+                <a href="./Files.html" class="sidebar-link" id="files-link">
+                    <span class="material-icons-sharp">description</span>
+                    <h3>Files</h3>
+                </a>
+
+                <a href="./file_history.html" class="sidebar-link" id="file_history-link">
+                    <span class="material-icons-sharp">manage_search</span>
+                    <h3>File history</h3>
+                </a>
+
+                <a href="./users.html" class="sidebar-link" id="users-link">
+                    <span class="material-icons-sharp">group</span>
+                    <h3>Users</h3>
+                </a>
+
+                <a href="./ocr.html" class="sidebar-link" id="ocr-link">
+                    <span class="material-icons-sharp">terminal</span>
+                    <h3>OCR</h3>
+                </a>
+
+                <a href="./logout.html" class="sidebar-link">
+                    <span class="material-icons-sharp">logout</span>
+                    <h3>Log out</h3>
+                </a>
+
+            </div>
+        </aside>
+
+        <!---------- END OF ASIDE ---------->
+
+        <div class="right">
+            <div class="top">
+                <button id="menu-btn">
+                    <span class="material-icons-sharp">menu</span>
+                </button>
+                <div class="theme-toggler">
+                    <span class="material-icons-sharp active">light_mode</span>
+                    <span class="material-icons-sharp">dark_mode</span>
+                </div>
+                <div class="profil">
+                    <div class="inform">
+                        <p>Hey, <b>Triantafyllos</b></p>
+                        <small class="text-muted">Admin</small>
+                    </div>
+                </div>
+            </div>
+            <!---------- END OF TOP ---------->
+        </div>
+
+        <script src="./dashboard.js"></script>
+        <script src="./sidebar.js"></script>
+</body>
+</html>
